@@ -16,7 +16,7 @@ O protótipo da aplicação está [nesse link](https://www.figma.com/file/H3gBEi
 - [ ] Criar tags semânticas no HTML.
 
 ### 3. Interação com API
-- [ ] A api está documentada nesse [link](https://exchangerate.host/#/#docs).
+- [ ] A api está documentada nesse [link](https://www.frankfurter.app/docs/).
 - [ ] A moeda a ser pesquisada deverá ser passada como parâmetro do _endpoint_.
 - [ ] Todas as moedas deverão ser listadas na tela.
 
