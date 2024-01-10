@@ -29,13 +29,20 @@ const fetchApi = () => {
 
 getbtn.addEventListener('click', (e) => {
   e.preventDefault();
+  if (getCoin.value) {
+    const coin = getCoin.value;
+    const upperCase = coin.toUpperCase();
 
-  const coin = getCoin.value;
-  const upperCase = coin.toUpperCase();
+    const newtitle = document.createElement('p');
+    newtitle.innerText = `Valores referentes a 1 ${upperCase}.`;
+    textCoin.appendChild(newtitle);
 
-  const newtitle = document.createElement('p');
-  newtitle.innerText = `Valores referentes a 1 ${upperCase}.`;
-  textCoin.appendChild(newtitle);
-
-  fetchApi();
+    fetchApi();
+  }
+  Swal.fire({
+    title: 'Ops ...',
+    text: 'Voce precisa passar uma moeda',
+    icon: 'error',
+    confirmButtonText: 'OK',
+  });
 });
