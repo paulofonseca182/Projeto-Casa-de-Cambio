@@ -5,18 +5,20 @@ const getbtn = document.getElementById('btn-search');
 const getCoin = document.getElementById('coin');
 const textCoin = document.getElementById('text-coin');
 const listCoins = document.getElementById('list-coins');
-const getlist = document.getElementsByClassName('list');
-const getText = document.getElementsByClassName('text-coin');
-const getTitle = document.getElementsByClassName('title');
-
 
 const fetchApi = () => {
   const host = 'api.frankfurter.app';
   fetch(`https://${host}/latest?from=${getCoin.value}`)
     .then((resp) => resp.json())
     .then((data) => {
+      const coin = getCoin.value;
+      const upperCase = coin.toUpperCase();
+      const newtitle = document.createElement('p');
+      newtitle.classList.add('title');
+      newtitle.innerText = `Valores referentes a 1 ${upperCase}.`;
       [Object.entries(data.rates)].forEach((a) => {
         a.forEach((b) => {
+          textCoin.appendChild(newtitle);
           const divCoins = document.createElement('div');
           divCoins.classList.add('list');
           listCoins.appendChild(divCoins);
@@ -63,14 +65,5 @@ getbtn.addEventListener('click', (e) => {
       confirmButtonText: 'OK',
     });
   }
-  if (getCoin.value) {
-    const coin = getCoin.value;
-    const upperCase = coin.toUpperCase();
-    const newtitle = document.createElement('p');
-    newtitle.classList.add('title');
-    newtitle.innerText = `Valores referentes a 1 ${upperCase}.`;
-    textCoin.appendChild(newtitle);
-    fetchApi();
-  }
+  fetchApi();
 });
-
