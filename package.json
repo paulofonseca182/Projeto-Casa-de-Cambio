@@ -21,6 +21,7 @@
   "homepage": "https://github.com/paulofonseca182/Projeto-Casa-de-Cambio#readme",
   "dependencies": {
     "@trybe/eslint-config-frontend": "^1.11.4",
+    "sweetalert2": "^11.10.2",
     "vite": "^5.0.11"
   },
   "Type": "module"

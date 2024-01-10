@@ -78,4 +78,29 @@ input {
   height: 583px;
   border-radius: 20px;
   background-color: #ffffff0c ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#list-coins {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 500px;
+  align-content: space-around;
+  justify-content: center;
+}
+
+.list {
+  background-color: #ffffff0c;
+  width: 150px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  margin: 15px;
+}
+
+.value {
+  color: yellow;
 }
