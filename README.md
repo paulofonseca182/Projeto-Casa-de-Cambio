@@ -3,6 +3,14 @@
 O projeto da casa de câmbio é uma aplicação que busca a conversão da taxa de uma moeda para diversas outras.
 O protótipo da aplicação está [nesse link](https://www.figma.com/file/H3gBEiF0F94VESCGx9DD17/Casa-de-C%C3%A2mbio?node-id=0%3A1).
 
+## Projeto Feito:
+
+### Mobile:
+  ![image](./img/mobile.gif)
+
+### Monitor:
+  ![image](./img/monitor.gif)
+
 ## Requisitos
 
 ### 1. Ambiente do Projeto
@@ -27,3 +35,4 @@ O protótipo da aplicação está [nesse link](https://www.figma.com/file/H3gBEi
 
 ### 5. Estilização (Bônus)
 - [ ] Implementação do [protótipo de alta fidelidade](https://www.figma.com/file/H3gBEiF0F94VESCGx9DD17/Casa-de-C%C3%A2mbio?node-id=0%3A1)
+
