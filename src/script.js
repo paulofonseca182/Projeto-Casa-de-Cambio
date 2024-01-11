@@ -65,5 +65,7 @@ getbtn.addEventListener('click', (e) => {
       confirmButtonText: 'OK',
     });
   }
-  fetchApi();
+  if (getCoin.value) {
+    fetchApi();
+  }
 });
